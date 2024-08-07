@@ -11,7 +11,7 @@ const isShow = ref(false);
       <div class="relative p-2">
         <button
           @click="isShow = !isShow"
-          class="px-3 py-1 bg-white border rounded hover:bg-gray-400"
+          class="px-3 py-1 transition-all bg-white border rounded hover:bg-gray-200 hover:shadow active:shadow-none"
         >
           Filter
         </button>
@@ -24,6 +24,8 @@ const isShow = ref(false);
         </div>
       </div>
     </div>
-    <div></div>
+    <div>
+      <div>halo</div>
+    </div>
   </div>
 </template>
