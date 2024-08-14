@@ -1,7 +1,16 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+import { dataApi } from "./functions/data";
 
+const getData = dataApi;
+const data = ref(null);
 const isShow = ref(false);
+
+onMounted(async () => {
+  const response = await getData();
+  data.value = response;
+  console.log(data.value);
+});
 </script>
 
 <template>
