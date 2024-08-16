@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <div>
+    <div>halo</div>
+  </div>
 </template>
 
 <script setup></script>
